@@ -9,6 +9,7 @@ body {
 h1 {
     text-align: center;
     font-weight: bold;
+    text-decoration: underline;
     color: #157d03;
     background-color: rgb(250, 235, 215);
     margin-left: 20cm; /* 2 of the 3 absolute units */
