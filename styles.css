@@ -25,3 +25,49 @@ span {
     outline: 2lh;
 }
 
+/* Box model with long hand notation */
+.attendanceLong {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Styling the names in the list */
+.attendanceLong label {
+    display: inline-block; /* 1/2 displays */
+    padding: 5px 10px 5px 5px;
+    background-color: #fff;
+}
+
+/* Added border to image and center with display:block */
+.border {
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: auto; /* auto margin for border of img */
+    display: block; /* 2/2 display */
+}
+
+/* Short hand notation for box model*/
+.agendaShort {
+    margin: 20px 2px 20px 2px;
+    padding: 15px 0px 20px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    /* Set the width of the container */
+    max-width: 800px;
+    height: 1100px;
+    /* Set a fixed height for the container */
+    max-height: 84vh;
+    margin: auto;
+}
