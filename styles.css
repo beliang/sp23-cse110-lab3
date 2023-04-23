@@ -2,8 +2,7 @@
 body {
     background-color: beige;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif;
-    margin: 30px;
-    /* 1 of 3 absolute units */
+    margin: 30px; /* 1 of 3 absolute units */
 }
 
 /* Centering and bolding the header of the page */
@@ -13,8 +12,7 @@ h1 {
     text-decoration: underline;
     color: #157d03;
     background-color: rgb(250, 235, 215);
-    margin-left: 20cm;
-    /* 2 of the 3 absolute units */
+    margin-left: 20cm; /* 2 of the 3 absolute units */
     margin-right: 20cm;
     margin-top: 10pt;
 }
@@ -22,8 +20,7 @@ h1 {
 /* Changing properties of the word between span element */
 span {
     color: hsl(0, 100%, 50%);
-    text-shadow: 0.0625ch 0.0625ch 0.125ch black;
-    /* 3 of 3 relative units */
+    text-shadow: 0.0625ch 0.0625ch 0.125ch black; /* 3 of 3 relative units */
     font-size: 1.5lvw;
     outline: 2lh;
 }
