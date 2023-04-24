@@ -71,3 +71,137 @@ span {
     max-height: 84vh;
     margin: auto;
 }
+
+/* Position property */
+.lastTime {
+    position: relative;
+    top: 10px;
+    left: 400px;
+}
+
+.today {
+    position: static;
+    bottom: 10;
+    right: auto;
+    top: 20;
+}
+
+.nextTime {
+    display: flex;
+    padding: auto;
+    word-spacing: auto;
+    justify-content: space-evenly;
+    font-size: larger;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.end {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.end h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.end img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.end video{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.end audio {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.end p {
+    position: relative;
+    bottom: 60px;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+
+@media (width: 360px) {
+    body {
+        font-size: 14px;
+        color: red;
+        background-color: aqua;
+    }
+}
+
+* {
+    font-size: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form p {
+    margin-bottom: 10px;
+}
+
+fieldset > * {
+    margin-bottom: 1em;
+}
+
+#reasons {
+    width: 200px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+#reasons option {
+    color: #555;
+    background-color: #fff;
+}
+
+#reasons option[value="Sick"] {
+    color: red;
+}
+
+p ~ label {
+    font: optional;
+    padding: auto;
+    margin: auto;
+    color: red;
+    font-family: 'Castoro Titling', cursive;
+}
+
+#message + button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p.same {
+    text-align: center;
+    display: block;
+    margin: 10;
+    color: green
+}
+
