@@ -50,7 +50,7 @@ span {
 /* Added border to image and center with display:block */
 .border {
     border-style: solid;
-    border-color: #ddd;
+    border-color: #0b9ed3f8;
     border-width: 5px;
     border-radius: 10px;
     margin: auto; /* auto margin for border of img */
