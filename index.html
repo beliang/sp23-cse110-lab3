@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Meeting minutes</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images_vids/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -12,6 +14,13 @@
         <h3>Date: 4/13/2023 Thursday</h3>
         <nav>
             <p>Top songs of the week:</p>
+            <style>
+                /* This styles the links when they are hovered over */
+                ul li a:hover {
+                    color: red;
+                    text-decoration: underline;
+                }
+            </style>
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=MSRcC626prw" target="_blank">SZA - Kill Bill</a> </li>
                 <li><a href="https://www.youtube.com/watch?v=I4DjHHVHWAE" target="_blank">Drake - Rich Flex</a></li>
@@ -20,8 +29,8 @@
     </header>
     <hr>
     <main>
-        <img src="images_vids/prod.jpg" alt="picture header">
-        <div>
+        <img class="border" src="images_vids/prod.jpg" alt="picture header">
+        <div class="attendanceLong">
             <section>
                 <h2>Attendance List:</h2>
                 <details>
@@ -36,41 +45,44 @@
                 </details>
             </section>
         </div>
-        <div>
-            <h2>Agenda For Today:</h2>
+        <div class="agendaShort">
+            <h2 style="font-size: 24px; color: #333; text-align: center; margin-bottom: 20px;">Agenda For Today:</h2>
             <ul>
                 <li>Summary of last meeting</li>
                 <li>Go over unfinished business from last time</li>
                 <li>Decide genre for next album </li>
                 <li>Practice playing</li>
             </ul>
-
-            <b><em>Summary of last meeting:</em></b>
-            <p>Last time we went over how to play our instruments, <br>
+            <p class="lastTime">
+            <b><em>Summary of last meeting:</em></b> <br>
+                Last time we went over how to play our instruments, <br>
                 how to produce music using different music softwares, <br>
                 as well as play a team building game. <br>
                 <em>Unfinished tasks: </em>
                 Practice, always time for practice :D
             </p>
-
-            <strong><i>Today we will: </i></strong>
-            <p>
-                Decide a genre our next album will focus on. If we are <br>
-                not able to decide today, narrow choices down to a few <br>
-                genres we are able to choose from. Here is a list of <br>
-                music genres:
-                <a href="https://strongsounds.com/blog/most-popular-genres-of-music/">Genres</a>
-            </p>
+            <div class="today">
+                <strong><i>Today we will: </i></strong> <br>
+                <p>
+                    Decide a genre our next album will focus on. If we are <br>
+                    not able to decide today, narrow choices down to a few <br>
+                    genres we are able to choose from. Here is a list of <br>
+                    music genres:
+                    <a href="https://strongsounds.com/blog/most-popular-genres-of-music/">Genres</a>
+                </p>
+            </div>
+            
 
             <h3>Results from today:</h3>
             <img src="images_vids/results.jpg" alt="polls of genre">
             <h2>Tasks for next week: </h2>
-            <ul>
+            <div class="nextTime"> 
                 <li>Look into the top 3 results today</li>
                 <li>Start producing</li>
                 <li>Open to ideas</li>
-            </ul>
-            
+            </div>
+        </div>
+        <div class="end">
             <hr>
 
             <h3>That is all for today, see you on tour next week:</h3>
@@ -84,7 +96,7 @@
         </div>
     </main>
     <footer>
-        <p>For any questions regarding today's meeting please send me any questions here</p>
+        <p style="text-align: center;">For any questions regarding today's meeting please send me any questions here</p>
         <form>
             <fieldset>
                 <p>Name: <input type="text"></p>
@@ -102,10 +114,10 @@
                     <option value="Other"></option>
                 </datalist>
 
-                <p>What is your email?</p>
+                <p class="same">What is your email?</p>
                 <input type="text" placeholder="Ex: johndoe@gmail.com">
 
-                <p>Will you be able to make it next time?</p>
+                <p class="same">Will you be able to make it next time?</p>
                 <label><input type="radio" name="yes-no" id="yes" value="yes">Yes</label>
                 <label><input type="radio" name="yes-no" id="no" value="no">No</label><br>
 
@@ -116,7 +128,7 @@
                     <option value="Other">Other</option>
                 </select>
 
-                <p>Check this box if we did a good job this meeting</p>
+                <p class="same">Check this box if we did a good job this meeting</p>
                 <label><input type="checkbox">Yes</label>
 
                 <p>Additional deatils</p>
